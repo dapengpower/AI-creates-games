@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dapengpower</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&family=Noto+Sans+SC:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --muted: #555;
+      --accent: #c0392b;
+      --bg: #faf9f7;
+      --line: #e0ddd8;
+      --max: 680px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Noto Sans SC', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 1.8;
+      padding: 60px 24px 120px;
+    }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      margin-bottom: 56px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid var(--ink);
+    }
+
+    header h1 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: 0.08em;
+    }
+
+    header nav {
+      margin-top: 16px;
+    }
+
+    header nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 13px;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    header nav a:hover {
+      border-color: var(--accent);
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 52px;
+    }
+
+    section h2 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    /* List items */
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    ul li:last-child {
+      border-bottom: none;
+    }
+
+    ul li a {
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      transition: color 0.2s;
+    }
+
+    ul li a:hover {
+      color: var(--accent);
+    }
+
+    ul li a::before {
+      content: '→ ';
+      color: var(--accent);
+      font-size: 12px;
+    }
+
+    ul li p {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 4px;
+      padding-left: 18px;
+      line-height: 1.6;
+    }
+
+    /* About block */
+    .about-block {
+      background: white;
+      border: 1px solid var(--line);
+      padding: 28px 32px;
+      border-radius: 2px;
+    }
+
+    .about-block p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 2;
+      margin-bottom: 12px;
+    }
+
+    .about-block p:last-child { margin-bottom: 0; }
+
+    .about-block strong {
+      color: var(--ink);
+      font-weight: 400;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 0.06em;
+    }
+
+    /* Fade in */
+    .wrap {
+      animation: fadeUp 0.5s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <h1>Dapengpower</h1>
+      <p>数据 · 工具 · 思考</p>
+      <nav><a href="./about.html">关于我 →</a></nav>
+    </header>
+
+    <section>
+      <h2>关于我</h2>
+      <div class="about-block">
+        <p>你好，我是 <strong>Dapengpower</strong>，专注于数据分析与业务可视化。</p>
+        <p>喜欢用工具解决实际问题，持续探索数据与业务之间的连接方式。</p>
+        <p>这个页面用于整理和分享我的工具、资源与思考。</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>我的项目</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/dapengpower">项目一（测试）</a>
+          <p>这是一个示例项目，后续替换为真实链接</p>
+        </li>
+        <li>
+          <a href="https://github.com/dapengpower">项目二（测试）</a>
+          <p>这是另一个示例项目，持续更新中</p>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>找到我</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/dapengpower">GitHub</a>
+          <p>查看我的代码仓库</p>
+        </li>
+        <li>
+          <a href="#">微信公众号</a>
+          <p>分享数据分析相关文章</p>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      左手业务，右手技术 · dapengpower.github.io
+    </footer>
+
+  </div>
+</body>
+</html>
